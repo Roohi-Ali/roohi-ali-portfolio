@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route} from "react-router-dom";
+import Intro from "./components/Intro/Intro";
+import NavBar from "./components/NavBar/NavBar";
+import Skill from "./components/Skill/Skill"
+import Portfolio from "./components/Portfolio/Portfolio";
+import Resume from "./components/Resume/Resume";
+import { useRef } from "react";
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+
+
+
 
 function App() {
+
+  const skillRef = useRef(null); 
+
+  const scrollToSkills = () => {
+    skillRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <NavBar onAboutClick={scrollToSkills} />
+        <Routes>
+        <Route path='/' element={
+          <>
+            <Intro />
+            <div ref={skillRef}>
+              <br/>
+              <Skill />
+            </div>
+          </>
+        } />
+        <Route path='/portfolio' element={<Portfolio />} />
+        <Route path='/resume' element={<Resume />} />
+      </Routes>
+    
+     
     </div>
   );
 }
