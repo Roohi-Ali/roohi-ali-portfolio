@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/roohi-ali-portfolio/static/css/main.0ed65402.css",
-    "main.js": "/roohi-ali-portfolio/static/js/main.72790444.js",
+    "main.css": "/roohi-ali-portfolio/static/css/main.a5af00a6.css",
+    "main.js": "/roohi-ali-portfolio/static/js/main.0f015122.js",
     "static/media/bg2.png": "/roohi-ali-portfolio/static/media/bg2.3fe6de88cef7d95d4c2a.png",
     "static/media/prog.png": "/roohi-ali-portfolio/static/media/prog.62c697c7879e993bb42b.png",
     "static/media/creative-writing.png": "/roohi-ali-portfolio/static/media/creative-writing.4e2d45f7ed79bd28ac38.png",
@@ -63,11 +63,11 @@
     "static/media/roboto-greek-ext-300-normal.woff": "/roohi-ali-portfolio/static/media/roboto-greek-ext-300-normal.b590dbe5c639944366d1.woff",
     "static/media/roboto-greek-ext-400-normal.woff": "/roohi-ali-portfolio/static/media/roboto-greek-ext-400-normal.16eb83b4a3b1ea994243.woff",
     "index.html": "/roohi-ali-portfolio/index.html",
-    "main.0ed65402.css.map": "/roohi-ali-portfolio/static/css/main.0ed65402.css.map",
-    "main.72790444.js.map": "/roohi-ali-portfolio/static/js/main.72790444.js.map"
+    "main.a5af00a6.css.map": "/roohi-ali-portfolio/static/css/main.a5af00a6.css.map",
+    "main.0f015122.js.map": "/roohi-ali-portfolio/static/js/main.0f015122.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ed65402.css",
-    "static/js/main.72790444.js"
+    "static/css/main.a5af00a6.css",
+    "static/js/main.0f015122.js"
   ]
 }
