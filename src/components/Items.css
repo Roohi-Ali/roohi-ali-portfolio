@@ -35,17 +35,20 @@
   }
 
   .other-skills-list {
-    list-style-type: none; /* Removes default bullets */
-    padding: 0; /* Removes padding from the list */
-  }
-  
-  .other-skills-list li {
-    padding: 5px 0; /* Adds padding between each skill */
-    font-size: 16px; /* Adjusts font size */
-    color:#c8ff00; /* Text color */
-  }
-  .linkColor{
-    color:#c8ff00bd;
-    text-decoration: underline;
-    
-  }
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of skills if they overflow */
+    gap: 10px;
+    padding: 0;
+}
+
+.other-skills-list li {
+    background-color: #c8ff00;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    white-space: nowrap; /* Prevents the text from breaking to the next line */
+}
+

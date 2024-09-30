@@ -1,21 +1,15 @@
-/* *{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 2;
-} */
+
 .resume-main{
     font-size: 16px;
     font-weight: 500;
     line-height: 2.5;
-    
     width: 90%;
-    /* max-width: 65rem;  */
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     border-radius: 0.5rem;
     gap: 1em;
-    
+    flex-wrap: wrap; 
 }
 
 .sidebar-item{
@@ -25,18 +19,17 @@
 .resume-sidebar{
     font-weight: bold;
     margin-bottom: 5px;
-    
     line-height: 2;
-    
     background-color: rgba(50, 50, 50);
     width: 33%;
     flex: 1 1 0;
     border-radius: 1rem;
-    
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: center;
+    padding: 1rem; 
+    /* change */
     
 }
 .avatarImg{
@@ -47,8 +40,9 @@
     flex: 2 1 0;
     background-color: rgb(50,50,50);
     border-radius: 1rem;
-    padding:0 3rem;
+    padding: 2rem 3rem;
     font-weight: 500;
+    text-align: justify;
 }
 .resume-content > h1{
     font-size: 2rem;
@@ -73,11 +67,9 @@ thead{
 }
 .img-avatar {
     width: 3cm;
-    height: 3cm;
-    
+    height: 3cm;  
     margin-bottom: 0.7cm; 
     border-radius: 50%;
-    
     object-fit: cover;
     object-position: 50% 50%;
   }
@@ -111,4 +103,57 @@ thead{
 }
 .padding-20{
   padding: 20px;
+}
+
+@media (max-width: 1024px) {
+  .resume-main {
+      flex-direction: column-reverse; /* Stack the sidebar and content on top of each other */
+  }
+
+  .resume-sidebar {
+      width: 100%;
+      padding: 1rem;
+  }
+
+  .resume-content {
+      width: 100%;
+      padding: 1rem;
+  }
+
+  .img-avatar {
+      width: 2.5cm;
+      height: 2.5cm;
+  }
+
+  h1 {
+      font-size: 1.75rem; /* Smaller font size for headers on small screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-main {
+      flex-direction: column;
+  }
+
+  .resume-sidebar {
+      width: 100%;
+  }
+
+  .resume-content {
+      width: 100%;
+      padding: 1rem;
+  }
+
+  .img-avatar {
+      width: 2cm;
+      height: 2cm;
+  }
+
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .menuLink {
+      font-size: 14px;
+  }
 }
