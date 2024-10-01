@@ -12,10 +12,14 @@ import DownloadResumeButton from '../DownloadResumeButton'
 
 const Resume = () => {
     return (
-        <div className="resume-main">
+        <div className="outerContainer">
+<div className="heading"><h1>Roohi Ali Kamdi</h1></div>
+<div className="resume-main">
             <section className="resume-sidebar">
-                <div className="avatarImg"><img className="img-avatar" src={avatar} alt="avatar" /></div>
-
+                <div className="avatarImg">
+                    <img className="img-avatar" src={avatar} alt="avatar" />
+                </div>
+               
                 <div className="bottomLineSeparator sidebar-item">
                     <h3>Contact</h3>
                     <div className="padding-20"><LocalPhoneIcon/><span className="padding-20">+92 334 3881010</span></div>
@@ -40,7 +44,7 @@ const Resume = () => {
             </section>
 
             <section className="resume-content">
-                <h1>Roohi Ali Kamdi</h1>
+                
                 <table>
                     
                     <thead>
@@ -51,14 +55,13 @@ const Resume = () => {
                     <tbody>
                         <tr className="colored-bg">
                             <td >Consulnet Corporation ,Karachi. Pakistan - <i>CodeGirls Intern</i></td>
-                            <td className="td-date">Aug 2023 - May 2024</td>
+                            {/* <td className="td-date">Aug 2023 - May 2024</td> */}
                         </tr>
                         <tr>
                             <td colSpan="2">
                                 <ul>
                                     <li className="indented">
-                                        Completed intensive training at CodeGirls, mastering front-end
-                                        and MERN stack development.
+                                    Completed a bootcamp at CodeGirls Karachi, where I mastered Front-end Development (HTML, CSS, JavaScript), TypeScript, and the MERN stack. Created a social media app, worked with REST APIs, and integrated Firebase for backend services.
                                     </li>
                                     <li className="indented">
                                         Following links leads to my projects, created as part of the
@@ -67,18 +70,18 @@ const Resume = () => {
                                             <div>
                                                 <li className="indented linkColor">
                                                     <a
-                                                        href="http://social-media.cnet-web.consulnet.net/"
+                                                        href="https://socialmediaapp-hyve.web.app/"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <span className="indented">Social Media App</span>
+                                                        <span className="indented">Social Media App / </span>
                                                     </a>
                                                     <a
                                                         href="https://github.com/Roohi-Ali/SocialMediaApp-Hyve"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <span className="indented">View on GitHub</span>
+                                                        <span className="underline">View on GitHub</span>
                                                     </a>
                                                 </li>
                                             </div>
@@ -89,7 +92,7 @@ const Resume = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <span className="indented">Maze Game - Typescript</span>
+                                                        <span className="indented">Maze Game - Typescript / </span>
                                                     </a>
 
                                                     <a
@@ -97,7 +100,7 @@ const Resume = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <span className="indented">View on GitHub</span>
+                                                        <span className="underline">View on GitHub</span>
                                                     </a>
                                                 </li>
                                             </div>
@@ -108,7 +111,7 @@ const Resume = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <span className="indented">Optimized Meal App in React</span>
+                                                        <span className="indented">Optimized Meal App in React / </span>
                                                     </a>
 
                                                     <a
@@ -116,7 +119,7 @@ const Resume = () => {
                                                         target="_blank"
                                                         rel="noopener noreferrer"
                                                     >
-                                                        <span className="indented">View on GitHub</span>
+                                                        <span className="underline">View on GitHub</span>
                                                     </a>
                                                 </li>
                                             </div>
@@ -127,7 +130,7 @@ const Resume = () => {
                         </tr>
                         <tr className="colored-bg">
                             <td >Emirates Skywards, Dubai, UAE - <i>Data Mining and Research Officer</i></td>
-                            <td className="td-date">Dec 2010 - Aug 2011</td>
+                            {/* <td className="td-date">Dec 2010 - Aug 2011</td> */}
                         </tr>
                         <tr >
                             <td colSpan="2">
@@ -150,7 +153,7 @@ const Resume = () => {
                         </tr>
                         <tr className="colored-bg">
                             <td >Sultan Abdul Rahman Contracting Co., Dubai, UAE - <i>Project Team Lead</i></td>
-                            <td className="td-date">Sep 2007 - Jun 2008</td>
+                            {/* <td className="td-date">Sep 2007 - Jun 2008</td> */}
                         </tr>
 
                         <tr>
@@ -184,7 +187,7 @@ const Resume = () => {
                     <tbody>
                         <tr className="colored-bg">
                             <td>University of Wollongong in Dubai (UOWD) - Dubai, UAE</td>
-                            <td>Sep 2006 - Dec 2009</td>
+                            {/* <td>Sep 2006 - Dec 2009</td> */}
                         </tr>
                         <tr>
 
@@ -202,7 +205,7 @@ const Resume = () => {
                         </tr>
                         <tr className="colored-bg">
                             <td>St Mary's High School - Dubai, UAE</td>
-                            <td>Sep 2004 - Dec 2006</td>
+                            {/* <td>Sep 2004 - Dec 2006</td> */}
                         </tr>
                         <tr>
                             <td colSpan="2" className="size-16">A Levels</td>
@@ -218,6 +221,8 @@ const Resume = () => {
             </section>
             
         </div>
+        </div>
+        
     );
 };
 

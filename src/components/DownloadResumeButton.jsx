@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
-  background-color: #c8ff00ac;
-  color: white;
+  background-color: #c8ff00;
+  color: black;
   border: none;
   padding: 10px 20px;
   text-align: center;
   font-size: 16px;
+  font-weight: 500;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
