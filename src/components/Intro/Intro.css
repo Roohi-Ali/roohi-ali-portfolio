@@ -1,5 +1,5 @@
 #intro{
-    height: calc(90vh);
+    /* height: calc(90vh); */
     width: 100vw;
     max-width: 75rem;
     margin: 0 auto;
@@ -12,7 +12,8 @@
     right:0;
     object-fit: cover;
     height:100vh;
-    opacity: 0.4;
+    /* width: 100%; */
+    opacity: 0.7;
     
 }
 .hello{
@@ -45,6 +46,7 @@
     line-height: 1.5;
     font-size: 1.15rem;
     width:50%;
+    background-color: #1e1e1e;
 }
 .yellow{
     color:#c8ff00;
@@ -63,9 +65,9 @@
 .btnHire:hover{
     background-color: #c8ff00;
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:350px){
     .bg{
-        right:-70vw;
+        /* right:-70vw; */
         top:40vw;
     }
    

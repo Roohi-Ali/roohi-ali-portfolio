@@ -14,7 +14,7 @@ const Intro = () => {
         <p className='text3'>Driven Computer Science graduate with a knack for finding creative solutions and a love for all things tech. Proficient in <span className='yellow'>MERN stack development, JavaScript, TypeScript, Firebase, MongoDB, React, Express, and Node.js.</span> Known for my strong communication skills and dedication to delivering high-quality work on time.</p>
         <p className='text3'>I thrive in dynamic, fast-paced environments where challenges spark innovation and disruptions lead to new beginnings.</p>
         
-        <Link to="/resume">
+        <Link to="/roohi-ali-portfolio/resume">
         <button className='btnHire'>Hire Me</button>
         </Link>
         

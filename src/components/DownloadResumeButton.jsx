@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import resume from '../assets/resume.pdf'
 
 const Button = styled.button`
   background-color: #c8ff00;
@@ -22,7 +23,7 @@ const Button = styled.button`
 const DownloadResumeButton = () => {
   return (
     <div>
-      <a href="/resume.pdf" download="Roohi_Ali_Resume.pdf">
+      <a href={resume} download="Roohi_Ali_Resume.pdf">
         <Button>Download Resume</Button>
       </a>
     </div>
